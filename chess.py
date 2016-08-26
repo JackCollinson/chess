@@ -185,7 +185,7 @@ class Board:
             print "error: no piece at given position"
 
 
-    # prints board to console, using code values for each piece
+    # prints board to console, using code values of each piece
     def __str__(self):
         board = ""
         for y in range(8,0,-1):
@@ -204,6 +204,7 @@ class Board:
 chessboard = Board()
 chessboard.setChessboard()
 print(chessboard)
+
 
 while(True):
     moveFrom = raw_input("Move: ").upper()
